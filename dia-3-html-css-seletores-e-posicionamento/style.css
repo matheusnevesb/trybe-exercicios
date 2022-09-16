@@ -1,35 +1,57 @@
-div:hover {
+ol li {
+    background-color: yellow;
+}
+
+ol li.par {
+    color: green;
+}
+
+ol li.impar {
+    text-transform: capitalize;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: red;
+}
+
+h1 {
+    font-size: 40px;
     border: 1px solid black;
 }
 
-.cor-primaria {
-    background-color: red;
+li {
+    font-size: 20px;
 }
 
-.cor-primaria h3, .cor-complementar h3, .cor-clara h3 {
-    font-style: italic;
+li em {
+    font-weight: bold;
 }
 
-h3 {
-    color: aquamarine;
+.fonte-azul {
+    color: blue;
 }
 
-.cor-secundaria {
-    background-color: blue;
+.stackOverflow:hover{
+    font-weight: bold;
+    color: orange;
 }
 
-.cor-complementar {
-    background-color: green;
+.w3:hover {
+    font-weight: bold;
+    color: green;
 }
 
-.div-tres {
-    padding: 20px 0;
+.mdn:hover {
+    font-weight: bold;
+    color: black;
 }
 
-.cor-escura {
-    background-color: rgb(24, 56, 85);
+.devDocs:hover {
+    font-weight: bold;
+    color: yellow;
 }
 
-.cor-clara {
-    background-color: rgb(206, 214, 220);
+.trybe:hover {
+    font-weight: bold;
+    color: green;
 }
