@@ -1,15 +1,35 @@
-h1, p {
-    text-align: center;
+div:hover {
+    border: 1px solid black;
 }
 
-li:hover {
+.cor-primaria {
+    background-color: red;
+}
+
+.cor-primaria h3, .cor-complementar h3, .cor-clara h3 {
+    font-style: italic;
+}
+
+h3 {
+    color: aquamarine;
+}
+
+.cor-secundaria {
     background-color: blue;
 }
 
-li:active {
-    font-family:fantasy ;
+.cor-complementar {
+    background-color: green;
 }
 
-ul, ol {
-    list-style: none;
+.div-tres {
+    padding: 20px 0;
+}
+
+.cor-escura {
+    background-color: rgb(24, 56, 85);
+}
+
+.cor-clara {
+    background-color: rgb(206, 214, 220);
 }
