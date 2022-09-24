@@ -19,5 +19,5 @@ const lado3 = 60;
 soma = lado1 + lado2 + lado3;
 
 if (soma == 180) {
-
+    
 }
