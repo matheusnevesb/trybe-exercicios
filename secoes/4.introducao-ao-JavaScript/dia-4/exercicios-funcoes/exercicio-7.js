@@ -15,7 +15,6 @@ let palavra = 'trybe'
 let final = 'be'
 
 function finalEmString(stringWord,stringEnding){
-    let condicao = true;
     arrayWord = stringWord.split('')
     arrayWord.reverse()
     stringWord = arrayWord.join('')
