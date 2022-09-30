@@ -23,11 +23,21 @@ function createDecemberDays(){
     }
     for (let dias = 0; dias < decemberDaysList.length; dias += 1){
         let li = document.createElement('li');
+        li.className = 'day'
         li.innerText = decemberDaysList[dias];
         ul.appendChild(li)
+        if (decemberDaysList[dias] == 24 || decemberDaysList[dias] == 25|| decemberDaysList[dias] == 31){
+            li.className += ' holiday'
+        }
+        if (decemberDaysList[dias] == 4 || decemberDaysList[dias] == 11|| decemberDaysList[dias] == 18 || decemberDaysList[dias] == 25){
+            li.className += ' friday'
+        }
+
 
     }
 }
 
 createDecemberDays()
+
+
 
