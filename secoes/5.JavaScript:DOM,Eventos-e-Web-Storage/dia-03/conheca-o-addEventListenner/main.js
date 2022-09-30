@@ -10,16 +10,60 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
+function adicionarClasse(e){
+    let li = e.target;
+    let ul = e.target.parentElement.children
+    for (let i = 0; i < ul.length; i += 1) {
+        let item = ul[i]
+        item.classList.remove('tech');
+    }
+    li.className = 'tech'
+}
+
+firstLi.addEventListener('click', adicionarClasse);
+secondLi.addEventListener('click', adicionarClasse);
+thirdLi.addEventListener('click', adicionarClasse);
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
+function mudarTexto(e){
+    let ol = e.target.previousElementSibling;
+    let listas = ol.children
+    // console.log(listas)
+    for (let i = 0; i < listas.length; i += 1) {
+        let lista = listas[i];
+        if (lista.className == 'tech'){
+            lista.innerText = e.target.value
+        }
+    }
+}
+
+input.addEventListener('keyup', mudarTexto);
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+function seClicarDuasVezes(){
+    contador += 1;
+    if (contador > 1){
+        window.location.href = 'https://github.com/matheusnevesb';
+    }
+}
+let contador = 0;
+const header = document.querySelector('header');
+const spotrybefy = header.firstElementChild
+spotrybefy.addEventListener('click', seClicarDuasVezes);
+console.log(spotrybefy)
+
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+function alterarCor(e){
+    e.target.style.color = 'blue'
+}
+
+myWebpage.addEventListener('mouseover', alterarCor);
 
 // Segue abaixo um exemplo do uso de event.target:
 
