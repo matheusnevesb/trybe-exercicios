@@ -14,4 +14,20 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
-  
+
+function createDecemberDays(){
+    const ul = document.getElementById('days')
+    let decemberDaysList = [29,30]
+    for (let i = 1; i <= 31; i += 1){
+        decemberDaysList.push(i)
+    }
+    for (let dias = 0; dias < decemberDaysList.length; dias += 1){
+        let li = document.createElement('li');
+        li.innerText = decemberDaysList[dias];
+        ul.appendChild(li)
+
+    }
+}
+
+createDecemberDays()
+
