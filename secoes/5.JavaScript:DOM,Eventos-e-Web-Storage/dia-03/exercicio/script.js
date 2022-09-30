@@ -41,3 +41,12 @@ createDecemberDays()
 
 
 
+function createBtnHolidays(){
+    let botaoFeriados = document.createElement('button');
+    botaoFeriados.innerText = 'Feriados';
+    botaoFeriados.id = 'btn-holiday';
+    let divMaeDoBotaoFeriado = document.querySelector('.buttons-container');
+    divMaeDoBotaoFeriado.appendChild(botaoFeriados)
+}
+
+createBtnHolidays();
