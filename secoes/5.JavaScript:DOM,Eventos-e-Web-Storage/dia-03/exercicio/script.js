@@ -50,3 +50,23 @@ function createBtnHolidays(){
 }
 
 createBtnHolidays();
+
+function mudaCorHoliday(){
+    const ul = document.getElementById('days');
+    let todasLis = ul.children
+    for(let i = 0; i < todasLis.length; i += 1){
+        let classes = todasLis[i].classList;
+        for(valor of classes){
+            let lista = todasLis[i];
+            let condicao = lista.style.backgroundColor != ''
+            if (valor == 'holiday' && condicao){
+                lista.style.backgroundColor = ''
+            }else if (valor == 'holiday'){
+                lista.style.backgroundColor = '#32a852'
+            }
+        }
+    }
+}
+
+let botaoFeriados = document.getElementById('btn-holiday');
+botaoFeriados.addEventListener('click',mudaCorHoliday);
