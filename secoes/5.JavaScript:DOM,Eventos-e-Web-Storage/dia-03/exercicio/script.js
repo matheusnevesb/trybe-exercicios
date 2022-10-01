@@ -70,3 +70,16 @@ function mudaCorHoliday(){
 
 let botaoFeriados = document.getElementById('btn-holiday');
 botaoFeriados.addEventListener('click',mudaCorHoliday);
+
+
+
+
+let divMaeDoBotaoSextaFeira = document.querySelector('.buttons-container');
+function criarBtnSextaFeira(palavra){
+    let btnSextaFeira = document.createElement('button');
+    btnSextaFeira.id = 'btn-friday'
+    btnSextaFeira.innerText = palavra
+    divMaeDoBotaoSextaFeira.appendChild(btnSextaFeira)
+}
+
+criarBtnSextaFeira('Sexta-feira')
