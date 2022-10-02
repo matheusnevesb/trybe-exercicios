@@ -14,10 +14,10 @@ function createDaysOfTheWeek() {
   createDaysOfTheWeek();
   
   // Escreva seu código abaixo.
+let decemberDaysList = [29,30]
 
 function createDecemberDays(){
     const ul = document.getElementById('days')
-    let decemberDaysList = [29,30]
     for (let i = 1; i <= 31; i += 1){
         decemberDaysList.push(i)
     }
@@ -83,3 +83,44 @@ function criarBtnSextaFeira(palavra){
 }
 
 criarBtnSextaFeira('Sexta-feira')
+
+// parte 5! ----------------------------------------------------------------
+function changeTextFriday(daysFriday) {
+    let fridayButton = document.querySelector('#btn-friday');
+    let allFridays = document.getElementsByClassName('friday');
+    let newText = 'sextou';
+
+    fridayButton.addEventListener('click', function(){
+        for (let i = 0; i < allFridays.length; i += 1) {
+            if (allFridays[i].innerHTML !== newText){
+                allFridays[i].innerHTML = newText;
+            }else {
+                allFridays[i].innerHTML = daysFriday[i];
+            }
+        }
+    })
+}
+daysFriday = [4,11,18,25];
+changeTextFriday(daysFriday);
+
+
+// parte 6! -------------------------------------------------------------------
+
+function darZoom(){
+    let days = document.querySelector('#days');
+    days.addEventListener('mouseover', function(event){
+        event.target.style.fontSize = '30px';
+        event.target.style.fontWeight = '600'
+    })
+}
+
+function tirarZoom(){
+    let days = document.querySelector('#days');
+    days.addEventListener('mouseout', function(event){
+        event.target.style.fontSize = '20px';
+        event.target.style.fontWeight = '200'
+    })
+}
+
+darZoom();
+tirarZoom();
