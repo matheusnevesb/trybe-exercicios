@@ -124,3 +124,14 @@ function tirarZoom(){
 
 darZoom();
 tirarZoom();
+
+// parte 7! -------------------------------------------------------------------
+
+function tarefaPersonalizada(texto){
+    let span = document.createElement('span');
+    span.innerHTML = texto;
+    let myTasks = document.querySelector('.my-tasks');
+    myTasks.appendChild(span)
+}
+
+tarefaPersonalizada('cozinhar');
