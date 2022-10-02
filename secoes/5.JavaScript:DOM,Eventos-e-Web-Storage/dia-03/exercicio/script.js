@@ -135,3 +135,17 @@ function tarefaPersonalizada(texto){
 }
 
 tarefaPersonalizada('cozinhar');
+
+// parte 8! -------------------------------------------------------------------
+
+function coloredLegend(cor){
+    let myTasks = document.querySelector('.my-tasks');
+    let div = document.createElement('div');
+    div.className = 'task';
+    div.style.backgroundColor = cor;
+
+    myTasks.appendChild(div);
+
+}
+
+coloredLegend('red')
