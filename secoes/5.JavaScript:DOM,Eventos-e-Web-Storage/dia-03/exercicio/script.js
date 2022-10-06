@@ -149,3 +149,17 @@ function coloredLegend(cor){
 }
 
 coloredLegend('red')
+
+// parte 9! -------------------------------------------------------------------
+
+// function selectTask(){
+//     let task = document.querySelector('.task');
+//     task.addEventListener('click',function(event){
+//         if (event.target.className == 'task selected'){
+//             event.target.className = 'task'
+//         }else {
+//             event.target.className = 'task selected'
+//         }
+//     })
+
+// }
