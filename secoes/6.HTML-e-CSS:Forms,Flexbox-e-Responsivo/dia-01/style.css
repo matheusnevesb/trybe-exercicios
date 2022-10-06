@@ -1,0 +1,44 @@
+.container {
+    border: 2px solid black;
+    padding: 10px;
+    height: 400px;
+    width: 600px;
+}
+
+.nome-email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containe-opcoes{
+    margin: 10px auto;
+}
+
+#espaco-texto{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.container-data{
+    margin: 10px auto;
+}
+
+.container-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+
+}
+
+.container-botoes {
+    margin: 10px auto;
+}
+
+.container-botoes input {
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}

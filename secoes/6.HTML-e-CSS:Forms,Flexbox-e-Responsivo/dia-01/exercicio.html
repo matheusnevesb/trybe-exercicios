@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Header da pagina</h1>
+
+    <form method="GET">
+        <section class="container">
+            <section class="nome-email">
+                <label for="">Nome:
+                    <input id="campo-nome" type="text" minlength="10" maxlength="40" required>
+                </label>
+                <label for="">Email:
+                    <input id="campo-email" type="email" minlength="10" maxlength="50">
+                </label>
+            </section>
+            <section class="containe-opcoes">
+                <label for="">
+                    <input type="radio" name="opcao">
+                    Cidade
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao">
+                    Campo
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao">
+                    Praia
+                </label>
+                <label for="">
+                    <input type="radio" name="opcao">
+                    Montanha
+                </label>
+            </section>
+            <section id="espaco-texto">
+                <label for="">Espaco para digitar a resposta:</label>
+                <textarea name="" id="text-area" cols="30" rows="10" maxlength="500"></textarea>
+            </section>
+            <section class="container-data">
+                <label for="">Qual a melhor data para sua viagem:
+                    <input type="date" name="" id="date">
+                </label>
+            </section>
+            <section class="container-checkbox">
+                <label for="">
+                    <input type="checkbox" id="checkbox-oportunidades" >
+                    Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+                </label>
+                <label for="">
+                    <input type="checkbox" id="checkbox-imagens">
+                    Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </label>
+            </section>
+        </section>
+        <section class="container-botoes">
+            <input id="submit" type="submit" value="Enviar">
+            <input id="clearFields" type="button" value="Limpar">
+        </section>
+    </form>
+
+
+    <script src="exercicio.js"></script>
+</body>
+</html>
