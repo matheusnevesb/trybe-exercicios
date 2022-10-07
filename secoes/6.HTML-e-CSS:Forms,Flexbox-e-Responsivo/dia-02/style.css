@@ -1,0 +1,29 @@
+.botoes-radio{
+    display: flex;
+    gap: 10px;
+}
+
+body{ 
+    background-color: rgb(31, 116, 57);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.cor {
+    color: rgb(121, 121, 121);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 40x auto;
+}
