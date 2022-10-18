@@ -21,7 +21,7 @@
       try {
         if (value1 === '' || value2 === ''){
             throw new Error('Possui valor em branco !')
-        }else if (isNaN(value1) || isNaN(value2)){
+        }else if (isNaN(value1) || isNaN(value2)) {
             throw new Error('Algum dos inputs nao eh um numero !')
         }
         const result = Number(value1) + Number(value2);
