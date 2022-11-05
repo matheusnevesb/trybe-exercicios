@@ -9,4 +9,5 @@ const fruitSalad = (fruit, additional) => {
   return [...fruit, ...additional]
 };
 
+
 console.log(fruitSalad(specialFruit, additionalItens));
